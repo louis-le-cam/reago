@@ -1,0 +1,41 @@
+{
+  "$schema": "https://www.schemastore.org/tsconfig.json",
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "esnext",
+
+    "types": ["vite/client"],
+    "lib": ["esnext", "DOM"],
+
+    "paths": {
+      "reago": ["./lib/index.ts"],
+      "reago/reactivity": ["./lib/reactivity.ts"],
+      "reago/element": ["./lib/element.ts"],
+      "@/*": ["./src/*"]
+    },
+
+    "skipLibCheck": true,
+
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    "noUncheckedSideEffectImports": true,
+    "erasableSyntaxOnly": true,
+
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "noImplicitThis": true,
+    "strictBuiltinIteratorReturn": true,
+    "strictFunctionTypes": true,
+    "noImplicitAny": true
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "reago",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./reactivity": {
+      "import": "./dist/reactivity.js",
+      "require": "./dist/reactivity.cjs"
+    },
+    "./element": {
+      "import": "./dist/element.js",
+      "require": "./dist/element.cjs"
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.15",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  }
+}
